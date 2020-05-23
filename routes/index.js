@@ -10,6 +10,7 @@ router.get('/home',function(req,res,next){
 res.render('home');
 });
 
+//std login
 router.get('/stud',function(req,res,next){
   res.render('studregister');
 });
