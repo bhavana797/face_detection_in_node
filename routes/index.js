@@ -14,6 +14,7 @@ router.get('/stud',function(req,res,next){
   res.render('studregister');
 });
 
+//adding data
 router.post('/add',function(req,res,next){
 var name = req.body.name;
 var password = req.body.password;
