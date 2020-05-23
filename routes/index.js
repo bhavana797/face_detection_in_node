@@ -20,7 +20,7 @@ var password = req.body.password;
 var cpassword = req.body.cpassword;
 var clg = req.body.clg;
 if(password == cpassword){
-
+//for insert
 var insert = `insert into studregister(name,password,clg)
 values('${name}','${password}','${clg}')`;
 db.query(insert,function(err,result){
