@@ -1,0 +1,71 @@
+<html>
+<center><head><h3>Registration form</h3>
+    <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head></center>
+<title>students detail</title>
+<body>
+	<form action="/add" method="post">
+	<center>
+	<table>
+	<label for="name">Username</label>
+	<input type="text" name="name" placeholder="Enter Username"><br><br>
+	<label for="password">Password</label>
+	<input type="text" name="password" placeholder="Enter password"><br><br>
+	<label for="cpassword">Confirm Password</label>
+	<input type="text" name="cpassword" placeholder="Enter confirm password"><br><br>
+	<label for="cars">Choose a car:</label>
+
+<select name="clg" id="clg">
+  <option value="BNCOE">BNCOE</option>
+  <option value="COEP">COEP</option>
+  <option value="SPC">SPC</option>
+  <option value="BDS">BDS</option>
+</select>
+<br><br>
+    <input type="submit" name="register" value="register">
+    
+	</table>
+</center>
+	</form>
+</body>
+</html>
